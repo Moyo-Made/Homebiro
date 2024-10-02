@@ -11,6 +11,7 @@ const config: Config = {
 			fontFamily: {
 				dmsans: ["DM Sans", "sans-serif"],
 				shadows: ["Shadows Into Light", "cursive"],
+				gabriela: ["Gabriela", "serif"],
 			},
 			colors: {
 				background: "var(--background)",
