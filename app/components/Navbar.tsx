@@ -17,8 +17,10 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+  
+
     return (
-        <nav className="bg-[#fff] flex justify-between items-center px-4 py-2">
+        <nav className="sticky z-99 bg-[#fff] flex justify-between items-center px-4 py-2">
             <Link href="/" className="md:ml-16 z-20">
                 <Image
                     src="/logo.png"
