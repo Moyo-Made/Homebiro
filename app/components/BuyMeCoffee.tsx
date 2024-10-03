@@ -19,7 +19,8 @@ const BuyMeCoffee = () => {
 				/>
 
 				<Link
-					href="/buy-me-coffee"
+					href="https://buymeacoffee.com/homebiro"
+					target="__blank"
 					className="md:px-[100px] px-[120px] py-3 font-gabriela text-[18px] bg-[#164CA4] text-white text-center rounded-md hover:bg-[#0E3A8B] mt-3"
 				>
 					Buy me a coffee

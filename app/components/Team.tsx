@@ -8,7 +8,7 @@ const Team = () => {
 				Meet Our Team
 			</h2>
 
-			<div className="flex flex-wrap md:gap-20 gap-10 md:w-[60%] justify-center items-center">
+			<div className="flex flex-wrap md:gap-10 gap-7 md:w-full justify-center items-center">
 				{/* Product Manager */}
 				<div className="flex flex-col text-[20px] text-center">
 					<Image
