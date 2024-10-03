@@ -6,7 +6,7 @@ const Waitlist = () => {
 	return (
 		<div className="flex flex-col justify-center items-center font-dmsans mt-16">
 			<div>
-				<h1 className="text-orange-500 text-3xl font-bold text-center">
+				<h1 className="text-orange-500 text-3xl font-bold text-center max-w-[700px]">
 					Join the waitlist for{" "}
 					<span className="text-[#164CA4] ">Homebiro</span>
 				</h1>
