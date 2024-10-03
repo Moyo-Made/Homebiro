@@ -5,12 +5,12 @@ import React from "react";
 const Waitlist = () => {
 	return (
 		<div className="flex flex-col justify-center items-center font-dmsans mt-16">
-			<div>
+			<div className="flex flex-col justify-center items-center">
 				<h1 className="text-orange-500 md:text-3xl text-2xl font-bold text-center w-[700px]">
 					Join the waitlist for{" "}
 					<span className="text-[#164CA4] ">Homebiro</span>
 				</h1>
-				<p className="md:max-w-[630px] max-w-[400px] text-[#222222] font-light text-center">
+				<p className="md:w-[800px] w-[400px] text-[#222222] font-light text-center">
 					Be the first to know when we launch. Get exclusive updates, early
 					access, and more.
 				</p>
