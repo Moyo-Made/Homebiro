@@ -22,7 +22,7 @@ const Features: React.FC = () => {
 			<h2 className="text-2xl font-bold text-center text-orange-500 mb-6 mt-10">
 				Features
 			</h2>
-			<div className="grid grid-cols-2 md:grid-cols-3 md:gap-10 gap-5 ml-20">
+			<div className="grid grid-cols-2 md:grid-cols-3 md:gap-10 gap-5 ml-14">
 				{features.map((feature, index) => (
 					<div
 						key={index}
