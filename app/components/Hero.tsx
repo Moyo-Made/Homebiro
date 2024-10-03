@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<div className="bg-[#E68653] md:h-[500px] h-[545px]">
+		<section id="home" className="bg-[#E68653] md:h-[500px] h-[545px]">
 			<div className="flex md:flex-row flex-col md:justify-around  items-center">
 				<div className="md:w-[600px] w-[500px] md:mt-0 mt-10">
 					<p className="text-white font-medium md:text-[35px] text-[26px] font-dmsans text-center md:text-end">
@@ -21,7 +21,7 @@ const Hero = () => {
 					alt="Hero Image"
 					width={500}
 					height={400}
-					className="w-[400px] h-[300px] md:w-[500px] md:h-[400px] md:ml-0 ml-16"
+					className="w-[400px] h-[300px] md:w-[500px] md:h-[400px] md:ml-0 ml-16 md:mt-14"
 				/>
 			</div>
 			<div className="relative w-[400px] h-[60px] rounded-full bg-[#fff] md:ml-28 md:-mt-10 mt-5 ml-14">
@@ -37,7 +37,7 @@ const Hero = () => {
 					Get Started
 				</Link>
 			</div>
-		</div>
+		</section>
 	);
 };
 

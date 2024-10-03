@@ -4,24 +4,34 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { navLinks } from "../navlinks";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
-    const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState("#home");
 
-    const isActive = (path: string) => pathname === path;
+    const isActive = (path: string) => activeLink === path;
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-  
+    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        setActiveLink(href);
+        const targetId = href.replace(/.*#/, "");
+        const elem = document.getElementById(targetId);
+        if (elem) {
+            elem.scrollIntoView({ behavior: "smooth" });
+        }
+        if (isMenuOpen) {
+            toggleMenu();
+        }
+    };
 
     return (
-        <nav className="sticky z-99 bg-[#fff] flex justify-between items-center px-4 py-2">
-            <Link href="/" className="md:ml-16 z-20">
+        <nav className="fixed h-20 top-0 left-0 right-0 z-50 bg-white shadow-md flex justify-between items-center px-4 py-2">
+            <Link href="/" className="md:ml-16 z-20" onClick={(e) => handleLinkClick(e, "#home")}>
                 <Image
                     src="/logo.png"
                     alt="Homebiro Logo"
@@ -37,6 +47,7 @@ const Navbar = () => {
                         key={link.href}
                         href={link.href}
                         className={isActive(link.href) ? "border-b-[3px] border-b-[#E2753A]" : "border-none"}
+                        onClick={(e) => handleLinkClick(e, link.href)}
                     >
                         {link.label}
                     </Link>
@@ -76,8 +87,8 @@ const Navbar = () => {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={isActive(link.href) ? "" : "border-none"}
-                                onClick={toggleMenu}
+                                className={isActive(link.href) ? "border-b-[3px] border-b-[#E2753A]" : "border-none"}
+                                onClick={(e) => handleLinkClick(e, link.href)}
                             >
                                 {link.label}
                             </Link>
