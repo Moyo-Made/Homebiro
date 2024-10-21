@@ -15,15 +15,15 @@ const BuyMeCoffee = () => {
 					alt="Coffee icon"
 					width={25}
 					height={30}
-					className="absolute left-[10px] top-1/2 transform -translate-y-1/2 ml-14 mt-1 text-center"
+					className="absolute left-[10px] top-1/2 transform -translate-y-1/2 md:ml-16 ml-14 mt-1 text-center"
 				/>
 
 				<Link
 					href="https://buymeacoffee.com/homebiro"
 					target="__blank"
-					className="md:px-[100px] px-[120px] py-3 font-gabriela text-[18px] bg-[#164CA4] text-white text-center rounded-md hover:bg-[#0E3A8B] mt-3"
+					className="md:px-[100px] px-[90px] py-3 font-gabriela text-[18px] bg-[#164CA4] text-white text-center rounded-md hover:bg-[#0E3A8B] mt-3"
 				>
-					Buy me a coffee
+					<p className="ml-4">Buy me a coffee</p>
 				</Link>
 			</div>
 		</div>

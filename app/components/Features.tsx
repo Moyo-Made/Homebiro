@@ -43,14 +43,14 @@ const Features: React.FC = () => {
 					</div>
 				))}
 			</div>
-			<div className="mt-10 flex justify-center items-center">
+			{/* <div className="mt-10 flex justify-center items-center">
 				<Link
 					href="/get-started"
 					className="bg-[#164CA4] text-white text-center items-center rounded-full font-dmsans font-semibold py-2 px-6 hover:bg-[#0E3A8B]"
 				>
 					Join Now
 				</Link>
-			</div>
+			</div> */}
 		</section>
 	);
 };

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { navLinks } from "../navlinks";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import logo from "../../public/logo.png"
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navbar = () => {
 				onClick={(e) => handleLinkClick(e, "#home")}
 			>
 				<Image
-					src="/logo.png"
+					src={logo}
 					alt="Homebiro Logo"
 					width={200}
 					height={200}
@@ -66,7 +67,7 @@ const Navbar = () => {
 			</div>
 
 			<div className="hidden md:block md:mr-16">
-				<Link href="/join-us">
+				<Link href="#waitlist">
 					<div className="bg-[#fff] border border-[#164CA4] rounded-full px-3 py-2 flex gap-2">
 						<div>
 							<Image
